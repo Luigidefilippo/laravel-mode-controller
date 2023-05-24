@@ -17,7 +17,15 @@
 
 <body>
 
-    <h1>Hello</h1>
+    <h2>Home movies</h2>
+        <ul>
+            @foreach ($movies as $movie)
+                <li>
+                    <img src="{{ $movie->cover_image}}" alt="">
+                    <p> {{ $movie->title }} </p>
+                </li>
+            @endforeach
+        </ul>
 
 </body>
 
