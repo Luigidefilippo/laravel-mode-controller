@@ -21,7 +21,7 @@
         <ul>
             @foreach ($movies as $movie)
                 <li>
-                    <img src="{{ $movie->cover_image}}" alt="">
+                    <img src="{{ $movie->image}}" alt="">
                     <p> {{ $movie->title }} </p>
                 </li>
             @endforeach
